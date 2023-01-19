@@ -1,0 +1,31 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="JZfE%?@l;g4_tomJRZ~.">sprite</variable><variable id="490%u8;$@L*.DazX45;k">player</variable></variables><block type="device_forever" id="+Zd;64M-npD:nbFqcX9s" x="182" y="33"></block><block type="device_gesture_event" id="EDbuQViBg_|SJl,xs(=7" x="400" y="106"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="LKI8r?NA+^$1UA?:3z2l"><field name="VAR" id="490%u8;$@L*.DazX45;k">player</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="game_create_sprite" id="2Ym[d)+NM61k.gEWx4q%"><value name="x"><shadow type="math_number" id=",vD!xsmmWqo+bR[0hrfD"><field name="NUM">2</field></shadow></value><value name="y"><shadow type="math_number" id="12aT42%nZ/q83RN8r@(k"><field name="NUM">2</field></shadow></value></block></value></block></statement></block><block type="pxt-on-start" id="Y0772,6VBB?8dp4MB.xF" x="13" y="156"><statement name="HANDLER"><block type="variables_set" id="Bx1GA]?Q3MQkV~GA:!E_"><field name="VAR" id="JZfE%?@l;g4_tomJRZ~.">sprite</field><value name="VALUE"><shadow type="math_number" id="8^E*Nc*RImQ1hr|zhyvm"><field name="NUM">0</field></shadow></value><next><block type="device_show_leds" id="QRu.Ab+:SJqmYwC;K{7J"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . # . # . 
+        # . . . # 
+        . # # # .
+        `</field></block></next></block></statement></block><block type="device_button_event" id="9i`e#M-,*,~$?hg{{jPK" x="292" y="260"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="game_move_sprite" id="UCDb/f=fr`p(B~Ium[7d"><value name="sprite"><block type="variables_get" id="Dx1k/RV$}H#Z@T_mDh8!"><field name="VAR" id="490%u8;$@L*.DazX45;k">player</field></block></value><value name="leds"><shadow type="math_number" id="Z42uNfTWX]+ip?0A{(4%"><field name="NUM">1</field></shadow></value></block></statement></block><block type="device_button_event" id="R2WAxub-zBC{7mkz~9TJ" x="576" y="346"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="game_turn_sprite" id="53$hBrcLCj_Yy1iMk;U0"><field name="direction">Direction.Right</field><value name="sprite"><block type="variables_get" id="r/J]~iV%7N8Qh%JOPgv{"><field name="VAR" id="490%u8;$@L*.DazX45;k">player</field></block></value><value name="degrees"><shadow type="math_number" id="sVQ5[g~S:J7h9J})uAAO"><field name="NUM">45</field></shadow></value></block></statement></block><block type="input_logo_event" id="WOVQA,oY%2:9~LJrKTW!" x="112" y="513"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_repeat_ext" id="`jPz_rc*3[9UWU^vpAAE"><value name="TIMES"><shadow type="math_whole_number" id="4MLWI+,QY?j%x?fZo~Qg"><field name="NUM">4</field></shadow></value><statement name="DO"><block type="device_show_leds" id="F7zMEIZkok#T6R2WBf+u"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field><next><block type="device_pause" id="tGV?P?mdpRRJKE!83rf["><value name="pause"><shadow type="timePicker" id="C+i*;Tj?jhJS2C}`NacG"><field name="ms">500</field></shadow></value><next><block type="device_show_leds" id="kz;FS,0bVero1/Eee-.b"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></next></block></statement><next><block type="device_pause" id="acQ0ox46+}c%kgTP=Y7V"><value name="pause"><shadow type="timePicker" id="_5Bf/9@*(6xON,fZ}h9O"><field name="ms">1000</field></shadow></value><next><block type="controls_repeat_ext" id="KJ;TiJvDQ]Uc/hJ#3ldB"><value name="TIMES"><shadow type="math_whole_number" id="4y+!g0nd)|tN5]nHc9_2"><field name="NUM">2</field></shadow></value><statement name="DO"><block type="device_show_leds" id="k7.5.4xw[88~cjG4H.iU"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field><next><block type="device_pause" id="mNpP_Wwt%P]-y~(@dg[+"><value name="pause"><shadow type="timePicker" id="|6f0zN8sV0e(4-L0C}4a"><field name="ms">500</field></shadow></value><next><block type="device_show_leds" id="(}e3SJC!-!]|1|^NXd1?"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block></next></block></next></block></statement></block><block type="device_button_event" id="Ma$p-F/5P7)H4}bmLpps" x="371" y="501"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="game_turn_sprite" id="s)!W(}v/bD#~g0%fjPQp"><field name="direction">Direction.Right</field><value name="sprite"><block type="variables_get" id="QSu694ojRwt4CP-VC[3j"><field name="VAR" id="490%u8;$@L*.DazX45;k">player</field></block></value><value name="degrees"><shadow type="math_number" id="g$X!sX|CX}oN_ws6D6O5"><field name="NUM">45</field></shadow></value></block></statement></block></xml>
