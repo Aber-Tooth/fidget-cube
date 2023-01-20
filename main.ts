@@ -1,14 +1,25 @@
 input.onButtonPressed(Button.A, function () {
     player.turn(Direction.Right, 45)
 })
+input.onGesture(Gesture.TiltLeft, function () {
+    player.move(-1)
+})
 input.onButtonPressed(Button.AB, function () {
-    player.move(1)
+	
 })
 input.onButtonPressed(Button.B, function () {
     player.turn(Direction.Right, 45)
 })
 input.onGesture(Gesture.Shake, function () {
     player = game.createSprite(2, 2)
+    while (true) {
+        if (player) {
+            break;
+        }
+    }
+})
+input.onGesture(Gesture.TiltRight, function () {
+    player.move(1)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     for (let index = 0; index < 4; index++) {
@@ -48,7 +59,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     }
 })
 let player: game.LedSprite = null
-let sprite = 0
 basic.showLeds(`
     . . . . .
     . # . # .
